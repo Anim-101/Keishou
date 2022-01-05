@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/gsm" mode="merge"/>
+    <filter root="/content/gsm" mode="merge"/>
+    <filter root="/content/dam/gsm" mode="merge"/>
+    <filter root="/content/experience-fragments/gsm" mode="merge"/>
+</workspaceFilter>

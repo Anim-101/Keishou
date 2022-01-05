@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:tags="[]"
+        cq:template="/conf/gsm/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Header"
+        sling:resourceType="gsm/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="gsm/components/container"
+            layout="simple">
+            <navigation
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="gsm/components/navigation"
+                collectAllPages="false"
+                navigationRoot="/content/gsm/us/en"
+                skipNavigationRoot="false"
+                structureDepth="1"/>
+            <languagenavigation
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="gsm/components/languagenavigation"
+                navigationRoot="/content/gsm/us"
+                structureDepth="2"/>
+            <search
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="gsm/components/search"
+                searchRoot="/content/gsm/us"/>
+        </root>
+    </jcr:content>
+</jcr:root>
